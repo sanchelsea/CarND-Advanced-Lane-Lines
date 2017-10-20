@@ -220,11 +220,13 @@ I compute the mean squared error between the second degree coefficients of the c
 With these changes, the challenge video worked.
 
 I then tried with the harder challenge. It failed badly.
-With diag mode, I noticed the color thresholding failed miserably when the overall intensity of the frame was very high.
+With diag mode, I noticed the color thresholding failed miserably when the overall intensity of the frame was very high or very low.
 Also in harder challenge video, there are many instances where there are no right markings.
+Lane detection based on histogram will also fail for highly curvy roads. 
 
 I would try the following to make my pipeline more rigid:
 * Histogram equalization
+* Dynamic thresholding
 * LAB color scpace
 * For lane detection, currently we compute the histogram for the bottom half of the image. This may not work on very curvy roads. Explore some other methods.
 
