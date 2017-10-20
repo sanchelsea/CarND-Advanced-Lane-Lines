@@ -111,7 +111,7 @@ The thresholds were tuned using the interact package.
 
 Here's an example of my output for this step. 
 
-![alt text][image3]
+![alt text][image2]
 
 
 #### Step 4. Detect Lanes
